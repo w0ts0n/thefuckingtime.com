@@ -1,3 +1,9 @@
 Asshole@
 Shitface@
 Dick@
+<<<<<<< HEAD
+=======
+Tosser@
+Wanker@
+Hoser@
+>>>>>>> 53a87b3dbb7ab837e5ef6847a1943adacfcbae3c
