@@ -4,10 +4,12 @@ function showClock(offset) {
     var dayNames= ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
     
     var local_time = new Date();
+    var newDate = new Date();
 
     // Create a newDate() object
-    var newDate = new Date((offset * 1000)* (-1));
-
+    if (offset != 0) {
+   	newDate.setHours(newDate.getHours() - ((offset/60)/60)); 
+    } 
     // Extract the current date from Date object
     newDate.setDate(newDate.getDate());
     // Output the day, date, month and year    
@@ -26,8 +28,7 @@ function showClock(offset) {
 
         // Create a newDate() object and extract the hours of the current time on the visitor's
         var hours = newDate.getHours();
-        // Add a leading zero to the hours value
-        $("#hours").html((hours < 10 ? "0" : "" ) + (hours + 2));
+        $("#hours").html((hours < 10 ? "0" : "" ) + (hours));
     }, 1000);
 }
 
