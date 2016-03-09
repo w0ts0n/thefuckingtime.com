@@ -1,4 +1,4 @@
-TheFuckingTime
+TheFuckingTime.com
 ===============
 A simple display of time and an insult to boot!
 
